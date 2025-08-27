@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Ahmed Shawki - Web Dev',
     description:
       'Portfolio of Ahmed Shawki, showcasing projects, skills, and contact information for web development services.',
-    url: 'https://ahmedshawki.dev',
+    url: 'https://ahmedshawkidev.vercel.app/',
     siteName: 'Ahmed Shawki Portfolio',
     images: [
       {
