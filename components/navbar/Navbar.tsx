@@ -13,11 +13,11 @@ export default function Navbar() {
     <>
       <Sheet open={open} onOpenChange={setOpen}>
         <div className='flex flex-row-reverse justify-between items-center w-full absolute top-0 left-0 px-5 py-5'>
-          <div className='md:hidden'>
+          <div className='xl:hidden'>
             <ModeToggle />
           </div>
-          <SheetTrigger asChild className='fixed top-5 left-5 px-5 py-5 z-50'>
-            <Button variant='ghost' size='icon' className='md:hidden'>
+          <SheetTrigger asChild className='fixed top-4 left-5 px-4 py-5 z-50 backdrop-blur-3xl'>
+            <Button variant='ghost' size='icon' className='xl:hidden'>
               <MenuIcon className='h-8 w-8' />
               <span className='sr-only'>Toggle navigation menu</span>
             </Button>
@@ -56,9 +56,9 @@ export default function Navbar() {
       </Sheet>
 
       <header
-        className={`fixed left-0 top-0 w-full h-15 hidden md:flex items-center transition-colors duration-300 z-50 backdrop-blur-xs`}
+        className={`fixed left-0 top-0 w-full h-15 hidden xl:flex items-center transition-colors duration-300 z-50 backdrop-blur-xs`}
       >
-        <div className=' w-[80%]  flex items-center justify-between m-auto px-6  '>
+        <div className=' w-[80%]  flex items-center justify-between m-auto px-6'>
           <Link href='#home' className='flex items-center gap-1' prefetch={false}>
             <Code className='h-8 w-8' />
             <span className='text-xl'>Ahmed Shawki</span>
