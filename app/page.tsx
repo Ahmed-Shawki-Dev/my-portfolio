@@ -9,9 +9,7 @@ import Skills from '../components/skills/Skills'
 const Page = () => {
   return (
     <main className='container mx-auto '>
-      <Section>
-      <Hero />
-      </Section>
+        <Hero />
       <Section>
         <AboutMe />
       </Section>
