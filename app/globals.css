@@ -44,8 +44,11 @@
 }
 
 body {
-  background-image: radial-gradient(var(--pattern-color) 1px, transparent 1px);
-  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(45deg, var(--pattern-color) 1px, transparent 1px),
+    linear-gradient(-45deg, var(--pattern-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center;
   min-height: 100vh;
   @apply bg-background text-foreground px-6 md:px-12; 
 }
@@ -59,7 +62,7 @@ body {
   --pattern-color: oklch(0% 0 0 / 0.15);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.72 0.12 237);
+  --primary: #66ADB2;
   --primary-foreground: oklch(0.98 0 0);
   --secondary: oklch(79.03% 0.12113 211.477);
   --secondary-foreground: oklch(0.05 0 0);
@@ -94,7 +97,7 @@ body {
   --pattern-color: oklch(100% 0.00011 271.152 / 0.15);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(59.776% 0.13185 237.663);
+  --primary: #5C9FA4;
   --primary-foreground: oklch(0.95 0 0);
   --secondary: oklch(58.982% 0.10493 216.276);
   --secondary-foreground: oklch(0.95 0 0);
@@ -143,3 +146,7 @@ body {
   background: var(--muted); 
   border-radius: 6px;
 }
+
+
+
+

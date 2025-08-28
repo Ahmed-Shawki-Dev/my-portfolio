@@ -9,12 +9,12 @@ import ScrollDownButton from '../ScrollDown'
 const Hero = () => {
   return (
     <div
-      className='relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15'
+      className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15'
       id='Home'
     >
       <div className='max-w-screen-xl w-full  mx-auto grid lg:grid-cols-2 gap-12  md:px-6  '>
         <div className='flex-1 flex flex-col justify-center items-center xl:items-start space-y-5'>
-          <div>
+          <div className='space-y-1'>
             <h1 className='text-[2rem] md:text-5xl xl:text-6xl font-semibold text-center xl:text-left'>
               HELLO, I&apos;M{' '}
               <span className='font-bold text-primary'>
@@ -34,7 +34,7 @@ const Hero = () => {
             <p className='font-light text-center text-[0.95rem] xl:text-left max-w-3xl  md:text-xl xl:text-3xl flex flex-col'>
               <span>
                 Frontend Developer{' '}
-                <span className='text-secondary font-medium'>React & Next.js</span>
+                <span className=' font-medium'>React & Next.js</span>
               </span>
               <span>building modern web apps</span>
             </p>
