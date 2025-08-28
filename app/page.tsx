@@ -2,18 +2,31 @@ import AboutMe from '../components/about/AboutMe'
 import ContactMe from '../components/contact/ContactUs'
 import Hero from '../components/hero/Hero'
 import Projects from '../components/projects/Projects'
+import Section from '../components/Section/Section'
 import Services from '../components/Services/Services'
 import Skills from '../components/skills/Skills'
 
 const Page = () => {
   return (
     <main className='container mx-auto '>
+      <Section>
       <Hero />
-      <AboutMe />
-      <Services />
-      <Projects />
-      <Skills />
-      <ContactMe />
+      </Section>
+      <Section>
+        <AboutMe />
+      </Section>
+      <Section>
+        <Services />
+      </Section>
+      <Section>
+        <Projects />
+      </Section>
+      <Section>
+        <Skills />
+      </Section>
+      <Section>
+        <ContactMe />
+      </Section>
     </main>
   )
 }

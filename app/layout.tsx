@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer'
 import Navbar from '../components/navbar/Navbar'
 import { ThemeProvider } from '../components/theme-provider'
 import './globals.css'
+import UpButton from '../components/UpButton'
 
 const cairoSans = Cairo({
   subsets: ['latin', 'arabic'],
@@ -70,6 +71,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <UpButton/>
         </ThemeProvider>
       </body>
     </html>
