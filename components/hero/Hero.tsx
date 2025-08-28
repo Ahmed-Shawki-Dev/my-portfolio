@@ -1,12 +1,15 @@
 'use client'
 import { Eye, Paperclip } from 'lucide-react'
 import Link from 'next/link'
-import { Typewriter } from 'react-simple-typewriter'
 import HeroImage from '../hero/HeroImage'
-import { Button } from '../ui/button'
 import ScrollDownButton from '../ScrollDown'
-import { Suspense } from 'react'
-import Loading from '../../app/loading'
+import { Button } from '../ui/button'
+import dynamic from 'next/dynamic'
+
+const Typewriter = dynamic(
+  () => import('react-simple-typewriter').then((mod) => mod.Typewriter),
+  { ssr: false }, 
+)
 
 const Hero = () => {
   return (
@@ -17,9 +20,9 @@ const Hero = () => {
       <div className='max-w-screen-xl w-full  mx-auto grid lg:grid-cols-2 gap-12  md:px-6  '>
         <div className='flex-1 flex flex-col justify-center items-center xl:items-start space-y-5'>
           <div className='space-y-1'>
-            <h1 className='text-[2rem] md:text-5xl xl:text-6xl font-semibold text-center xl:text-left'>
+            <h1 className='text-[2rem] md:text-5xl xl:text-6xl font-bold text-center xl:text-left'>
               HELLO, I&apos;M{' '}
-              <span className='font-bold text-primary'>
+              <span className='font-black text-primary'>
                 <Typewriter
                   words={['WEB DEV', 'AHMED']}
                   loop={1}
@@ -33,12 +36,11 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className='font-light text-center text-[0.95rem] xl:text-left max-w-3xl  md:text-xl xl:text-3xl flex flex-col'>
+            <p className='font-light text-center text-[0.95rem] xl:text-left max-w-3xl space-y-1  md:text-xl xl:text-3xl flex flex-col'>
               <span>
-                Frontend Developer{' '}
-                <span className=' font-medium'>React & Next.js</span>
+                Frontend Developer <span className=' font-medium'>React & Next.js</span>
               </span>
-              <span>building modern web apps</span>
+              <span>Building Modern Web Apps</span>
             </p>
           </div>
 
@@ -55,11 +57,9 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <Suspense fallback={<Loading/>}>
-        <div className='flex justify-center xl:justify-end items-center'>
+        <div className='flex justify-center xl:justify-end items-center w-full px-10  md:p-0 '>
           <HeroImage />
         </div>
-        </Suspense>
       </div>
       <ScrollDownButton />
     </div>

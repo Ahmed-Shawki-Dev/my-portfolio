@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import AboutMe from '../components/about/AboutMe'
 import ContactMe from '../components/contact/ContactUs'
 import Hero from '../components/hero/Hero'
