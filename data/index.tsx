@@ -76,7 +76,7 @@ export const contacts: IContact[] = [
   {
     id: 3,
     name: 'Phone',
-    icon: <Phone className='w-5 h-5' />,
+    icon: <Phone  className='w-5 h-5' />,
     link: 'tel:+201098786468',
     hoverText: 'Call me directly',
   },

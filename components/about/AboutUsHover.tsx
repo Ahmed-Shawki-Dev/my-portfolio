@@ -10,7 +10,7 @@ export function AboutMeHover({ hoverText, icon, link, name }: IContact) {
         <Button
           variant='outline'
           size={'icon'}
-          className='flex items-center gap-2 rounded-md bg-background font-medium justify-center cursor-pointer'
+          className='flex items-center gap-2  font-medium justify-center cursor-pointer rounded-full p-2 '
           onClick={() => window.open(link, '_blank')}
         >
           {icon}

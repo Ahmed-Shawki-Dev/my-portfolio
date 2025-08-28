@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='flex flex-wrap justify-center  gap-2  '>
         {contacts.map(({ id, icon, link }) => (
           <Button
-            variant={'ghost'}
+            variant={'link'}
             key={id}
             className='cursor-pointer'
             onClick={() => {
