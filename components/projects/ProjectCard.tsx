@@ -9,8 +9,8 @@ const ProjectCard = ({ demoLink, description, image, repoLink, technology, title
       <Link href={demoLink ? demoLink : ''} target='_blank' className='relative group'>
         <div className='relative w-full aspect-[16/9] rounded-t-lg overflow-hidden'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black opacity-0 group-hover:opacity-70 transition-opacity z-50 space-x-1 flex-col'>
-            <Eye />
-            <span>Live Demo</span>
+            <Eye className='text-white' />
+            <span className='text-white'>Live Demo</span>
           </div>
           <Image src={image} alt={title} fill />
         </div>

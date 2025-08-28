@@ -5,6 +5,8 @@ import { Typewriter } from 'react-simple-typewriter'
 import HeroImage from '../hero/HeroImage'
 import { Button } from '../ui/button'
 import ScrollDownButton from '../ScrollDown'
+import { Suspense } from 'react'
+import Loading from '../../app/loading'
 
 const Hero = () => {
   return (
@@ -53,9 +55,11 @@ const Hero = () => {
             </Link>
           </div>
         </div>
+        <Suspense fallback={<Loading/>}>
         <div className='flex justify-center xl:justify-end items-center'>
           <HeroImage />
         </div>
+        </Suspense>
       </div>
       <ScrollDownButton />
     </div>
