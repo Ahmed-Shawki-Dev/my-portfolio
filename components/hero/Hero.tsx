@@ -1,5 +1,6 @@
 'use client'
-import { Download, Eye, Paperclip } from 'lucide-react'
+import { Eye, Paperclip } from 'lucide-react'
+import Link from 'next/link'
 import { Typewriter } from 'react-simple-typewriter'
 import HeroImage from '../hero/HeroImage'
 import { Button } from '../ui/button'
@@ -36,12 +37,16 @@ const Hero = () => {
           </p>
 
           <div className='flex flex-wrap gap-2'>
-            <Button>
-              <Paperclip /> Hire Me
-            </Button>
-            <Button variant='outline'>
-              <Eye /> View CV
-            </Button>
+            <Link href={'mailto:ahmedshawki.dev@gmail.com'}>
+              <Button>
+                <Paperclip /> Hire Me
+              </Button>
+            </Link>
+            <Link href={'/Ahmed-Shawki-CV.pdf'} target='_blank'>
+              <Button variant='outline'>
+                <Eye /> View CV
+              </Button>
+            </Link>
           </div>
         </div>
         <div className='flex justify-center xl:justify-end items-center'>
