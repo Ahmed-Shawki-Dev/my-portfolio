@@ -29,7 +29,7 @@ export default function Navbar() {
             onCloseAutoFocus={(event) => event.preventDefault()}
           >
             <SheetHeader>
-              <Image alt='logo' src={'/logo.png'} width={60} height={60} />
+              <Image alt='logo' src={'/logo.webp'} width={60} height={60} />
             </SheetHeader>
             <div className='grid gap-2 '>
               <Link href={'#home'} onClick={() => setOpen(false)}>
@@ -60,7 +60,7 @@ export default function Navbar() {
       >
         <div className=' w-[80%] flex items-center justify-between m-auto px-6'>
           <Link href='#home' className='flex items-center gap-1' prefetch={false}>
-            <Image alt='logo' src={'/logo.png'} width={60} height={60} />
+            <Image alt='logo' src={'/logo.webp'} width={60} height={60} />
             <span className='sr-only'>Ahmed Shawki</span>
           </Link>
           <nav className='flex gap-6 items-center'>

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'Ahmed Shawki Portfolio',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.webp',
         width: 1200,
         height: 630,
         alt: 'Ahmed Shawki Portfolio',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     description:
       'Portfolio of Ahmed Shawki, showcasing projects, skills, and contact information for web development services.',
     creator: '@AhmedShawkiDev',
-    images: ['/og-image.png'],
+    images: ['/og-image.webp'],
   },
 }
 

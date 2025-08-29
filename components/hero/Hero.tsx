@@ -16,7 +16,6 @@ const Hero = () => {
       className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15 '
       id='Home'
     >
-
       <div className='max-w-screen-xl w-full  mx-auto grid lg:grid-cols-2 gap-12  md:px-6  '>
         <div className='flex-1 flex flex-col justify-center items-center xl:items-start space-y-5'>
           <div className='space-y-1'>
@@ -44,7 +43,7 @@ const Hero = () => {
             </p>
           </div>
           <div className='flex flex-wrap gap-2'>
-            <Link href={'mailto:ahmedshawki.dev@gmail.com'}>
+            <Link href={'mailto:ahmedshawki.dev@gmail.com'} target='_blank'>
               <Button>
                 <Paperclip /> Hire Me
               </Button>

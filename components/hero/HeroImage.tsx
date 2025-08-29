@@ -1,8 +1,17 @@
+import heroImage from '@/public/hero-image.webp'
 import Image from 'next/image'
+
 const HeroImage = () => {
   return (
-    <div>
-      <Image alt='Hero Dark' src='/hero-image.png' width={450} height={450} priority />
+    <div className='relative w-[450px] h-[450px]'>
+      <Image
+        src={heroImage}
+        alt='Hero Dark'
+        width={450}
+        height={450}
+        priority
+        className='rounded-md'
+      />
     </div>
   )
 }
