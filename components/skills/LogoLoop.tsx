@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Card } from '../ui/card'
@@ -311,21 +312,21 @@ export const LogoLoop = React.memo<LogoLoopProps>(
 
         const inner = (item as any).href ? (
           <div className='p-2 md:p-3'>
-          <a
-            className={cx(
-              'inline-flex items-center no-underline rounded',
-              'transition-opacity duration-200 ease-linear',
-              'hover:opacity-80',
-              'focus-visible:outline focus-visible:outline-current focus-visible:outline-offset-2',
-            )}
-            href={(item as any).href}
-            aria-label={itemAriaLabel || 'logo link'}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            {content}
-          </a>
-            </div>
+            <a
+              className={cx(
+                'inline-flex items-center no-underline rounded',
+                'transition-opacity duration-200 ease-linear',
+                'hover:opacity-80',
+                'focus-visible:outline focus-visible:outline-current focus-visible:outline-offset-2',
+              )}
+              href={(item as any).href}
+              aria-label={itemAriaLabel || 'logo link'}
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              {content}
+            </a>
+          </div>
         ) : (
           content
         )
