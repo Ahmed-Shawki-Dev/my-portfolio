@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import AboutMe from '../components/about/AboutMe'
 import ContactMe from '../components/contact/ContactUs'
 import Hero from '../components/hero/Hero'
@@ -10,7 +9,7 @@ import Skills from '../components/skills/Skills'
 const Page = () => {
   return (
     <main className='container mx-auto '>
-        <Hero />
+      <Hero />
       <Section>
         <AboutMe />
       </Section>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HeroImage = () => {
   return (
-    <div className='relative w-[450px] h-[450px]'>
+    <div className='relative '>
       <Image
         src={heroImage}
         alt='Hero Dark'
