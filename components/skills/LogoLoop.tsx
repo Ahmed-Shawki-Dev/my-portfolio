@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Card } from '../ui/card'
 
 export type LogoItem =
   | {
