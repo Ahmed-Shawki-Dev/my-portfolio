@@ -20,7 +20,7 @@ const Hero = () => {
       <div className='max-w-screen-xl w-full  mx-auto grid lg:grid-cols-2 gap-12  md:px-6  '>
         <div className='flex-1 flex flex-col justify-center items-center xl:items-start space-y-5'>
           <div className='space-y-1'>
-            <h1 className='text-[2rem] md:text-5xl xl:text-6xl font-bold text-center xl:text-left'>
+            <h1 className='text-[2rem] md:text-5xl xl:text-[3.5rem] 2xl:text-6xl font-bold text-center xl:text-left'>
               HELLO, I&apos;M{' '}
               <span className='font-black text-primary'>
                 <Typewriter
@@ -36,7 +36,7 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className='font-light text-center text-[0.95rem] xl:text-left max-w-3xl space-y-1  md:text-xl xl:text-3xl flex flex-col'>
+            <p className='font-light text-center text-[0.95rem]  xl:text-left max-w-3xl space-y-1  md:text-xl xl:text-[1.7rem] 2xl:text-3xl flex flex-col'>
               <span>
                 Frontend Developer <span className=' font-medium'>React & Next.js</span>
               </span>
