@@ -1,6 +1,6 @@
-import p1 from '@/public/projects/p1.webp'
-import p2 from '@/public/projects/p2.webp'
-import p3 from '@/public/projects/p3.webp'
+import p1 from '@/assets/projects/p1.webp'
+import p2 from '@/assets/projects/p2.webp'
+import p3 from '@/assets/projects/p3.webp'
 import { Code2, Gauge, Github, Layout, Linkedin, Phone, Plug } from 'lucide-react'
 import { IContact, IProject, IService } from '../interface'
 
