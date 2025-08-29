@@ -13,8 +13,8 @@ const Typewriter = dynamic(() => import('react-simple-typewriter').then((mod) =>
 const Hero = () => {
   return (
     <div
-    className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15 '
-    id='Home'
+      className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15 '
+      id='Home'
     >
 
       <div className='max-w-screen-xl w-full  mx-auto grid lg:grid-cols-2 gap-12  md:px-6  '>

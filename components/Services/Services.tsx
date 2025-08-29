@@ -1,7 +1,6 @@
 import { ServicesData } from '../../data'
 import { IService } from '../../interface'
 import { trimText } from '../../utils'
-import SpotlightCard from '../SpotlightCard '
 import ServiceCard from './ServiceCard'
 
 const Services = () => {
@@ -12,15 +11,7 @@ const Services = () => {
           Services
         </h2>
 
-        <div
-          style={{
-            width: '100%',
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, max-content))',
-            justifyContent: 'center',
-            gap: '1rem',
-          }}
-        >
+        <div className='grid [grid-template-columns:repeat(auto-fit,minmax(250px,max-content))] justify-center gap-4 w-full'>
           {ServicesData?.map((service: IService) => {
             const { description, icon, id, title } = service
             return (
@@ -30,7 +21,7 @@ const Services = () => {
                 icon={icon}
                 title={title}
                 description={trimText(description)}
-                />
+              />
             )
           })}
         </div>

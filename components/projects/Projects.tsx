@@ -10,15 +10,7 @@ const Projects = () => {
         <h2 className='text-3xl md:text-5xl xl:text-6xl font-bold text-center xl:text-left'>
           Projects
         </h2>
-        <div
-          style={{
-            width: '100%',
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, max-content))',
-            justifyContent: 'center',
-            gap: '1rem',
-          }}
-        >
+        <div className='grid [grid-template-columns:repeat(auto-fit,minmax(250px,max-content))] justify-center gap-4 w-full'>
           {projectsData?.map((project: IProject) => {
             const { demoLink, description, id, image, repoLink, technology, title } = project
             return (

@@ -9,7 +9,7 @@ export default function AboutMe() {
           About Me
         </h2>
 
-        <p className='text-accent-foreground text-center max-w-3xl xl:max-w-4xl text-base md:text-lg xl:text-2xl leading-relaxed tracking-wide font-light'>
+        <p className='text-foreground text-center max-w-3xl xl:max-w-4xl text-base md:text-lg xl:text-2xl leading-relaxed tracking-wide font-light'>
           I&apos;m a Frontend Developer specializing in React & TypeScript, building high-quality,
           API-driven web applications with Next.js, Tailwind CSS, and Redux. I bridge the user
           interface to core functionality, delivering functional and performant solutions.

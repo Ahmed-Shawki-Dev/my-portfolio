@@ -18,10 +18,10 @@ const Page = () => {
         <Services />
       </Section>
       <Section>
-        <Projects />
+        <Skills />
       </Section>
       <Section>
-        <Skills />
+        <Projects />
       </Section>
       <Section>
         <ContactMe />

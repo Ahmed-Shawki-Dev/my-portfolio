@@ -21,7 +21,7 @@ const UpButton = () => {
 
   return (
     <div
-      className='fixed bottom-10 right-10 transition-opacity duration-500 ease-in-out opacity-100 hidden xl:block'
+      className='fixed bottom-10 right-10 transition-opacity duration-500 z-40 ease-in-out opacity-100 hidden xl:block'
       style={{ transform: show ? 'translateY(0)' : 'translateY(20px)' }}
     >
       <Button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

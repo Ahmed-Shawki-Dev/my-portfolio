@@ -1,5 +1,6 @@
 'use client'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Card } from '../ui/card'
 
 export type LogoItem =
   | {
@@ -309,6 +310,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
           : (item as any).alt ?? (item as any).title
 
         const inner = (item as any).href ? (
+          <div className='p-2 md:p-3'>
           <a
             className={cx(
               'inline-flex items-center no-underline rounded',
@@ -323,6 +325,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
           >
             {content}
           </a>
+            </div>
         ) : (
           content
         )

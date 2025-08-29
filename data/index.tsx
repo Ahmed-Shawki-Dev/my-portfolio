@@ -36,22 +36,23 @@ export const projectsData: IProject[] = [
 ]
 
 export const skillsDataObj = [
-  { src: '/icons/react.svg', alt: 'React', href: '#' },
-  { src: '/icons/next.svg', alt: 'Next.js', href: '#' },
-  { src: '/icons/typescript.svg', alt: 'TypeScript', href: '#' },
-  { src: '/icons/javascript.svg', alt: 'JavaScript', href: '#' },
-  { src: '/icons/tailwindcss.svg', alt: 'Tailwind CSS', href: '#' },
-  { src: '/icons/redux-reducer.svg', alt: 'Redux', href: '#' },
-
-  { src: '/icons/prisma.svg', alt: 'Prisma', href: '#' },
-  { src: '/icons/git.svg', alt: 'Git', href: '#' },
-  { src: '/icons/vercel.svg', alt: 'Vercel', href: '#' },
-
-  { src: '/icons/html.svg', alt: 'HTML', href: '#' },
-  { src: '/icons/css.svg', alt: 'CSS', href: '#' },
-  { src: '/icons/sass.svg', alt: 'Sass', href: '#' },
-
-  { src: '/icons/pnpm.svg', alt: 'pnpm', href: '#' },
+  { src: '/icons/react.svg', alt: 'React', href: 'https://react.dev/' },
+  { src: '/icons/next.svg', alt: 'Next.js', href: 'https://nextjs.org/' },
+  { src: '/icons/typescript.svg', alt: 'TypeScript', href: 'https://www.typescriptlang.org/' },
+  {
+    src: '/icons/javascript.svg',
+    alt: 'JavaScript',
+    href: 'https://developer.mozilla.org/docs/Web/JavaScript',
+  },
+  { src: '/icons/redux-reducer.svg', alt: 'Redux Toolkit', href: 'https://redux-toolkit.js.org/' },
+  { src: '/icons/tailwindcss.svg', alt: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
+  { src: '/icons/prisma.svg', alt: 'Prisma', href: 'https://www.prisma.io/' },
+  { src: '/icons/vercel.svg', alt: 'Vercel', href: 'https://vercel.com/' },
+  { src: '/icons/git.svg', alt: 'Git', href: 'https://git-scm.com/' },
+  { src: '/icons/html.svg', alt: 'HTML', href: 'https://developer.mozilla.org/docs/Web/HTML' },
+  { src: '/icons/css.svg', alt: 'CSS', href: 'https://developer.mozilla.org/docs/Web/CSS' },
+  { src: '/icons/sass.svg', alt: 'Sass', href: 'https://sass-lang.com/' },
+  { src: '/icons/pnpm.svg', alt: 'pnpm', href: 'https://pnpm.io/' },
 ]
 
 export const contacts: IContact[] = [

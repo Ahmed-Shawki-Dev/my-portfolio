@@ -1,7 +1,8 @@
 'use client'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
-import { Code, MenuIcon } from 'lucide-react'
+import { MenuIcon } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { ModeToggle } from '../mode-toggle'
@@ -27,11 +28,10 @@ export default function Navbar() {
             className='pl-5 pt-5'
             onCloseAutoFocus={(event) => event.preventDefault()}
           >
-            <SheetHeader className='flex flex-row gap-1'>
-              <Code className='h-6 w-6 items-center ' />
-              <span className='text-xl'>Ahmed Shawki</span>
+            <SheetHeader>
+              <Image alt='logo' src={'/logo.png'} width={60} height={60} />
             </SheetHeader>
-            <div className='grid gap-2 py-6'>
+            <div className='grid gap-2 '>
               <Link href={'#home'} onClick={() => setOpen(false)}>
                 Home
               </Link>
@@ -41,11 +41,11 @@ export default function Navbar() {
               <Link href='#services' onClick={() => setOpen(false)}>
                 Services
               </Link>
-              <Link href='#projects' onClick={() => setOpen(false)}>
-                Projects
-              </Link>
               <Link href='#skills' onClick={() => setOpen(false)}>
                 Skills
+              </Link>
+              <Link href='#projects' onClick={() => setOpen(false)}>
+                Projects
               </Link>
               <Link href='#contact' onClick={() => setOpen(false)}>
                 Contact
@@ -56,12 +56,11 @@ export default function Navbar() {
       </Sheet>
 
       <header
-        className={`fixed left-0 top-0 w-full h-15 hidden xl:flex items-center transition-colors duration-300 z-50 backdrop-blur-xs`}
+        className={`fixed left-0 top-0   w-full h-15 hidden xl:flex items-center  transition-colors duration-300 z-50 backdrop-blur-xs `}
       >
-        <div className=' w-[80%]  flex items-center justify-between m-auto px-6'>
+        <div className=' w-[80%] flex items-center justify-between m-auto px-6'>
           <Link href='#home' className='flex items-center gap-1' prefetch={false}>
-            <Code className='h-8 w-8' />
-            <span className='text-xl'>Ahmed Shawki</span>
+            <Image alt='logo' src={'/logo.png'} width={60} height={60} />
             <span className='sr-only'>Ahmed Shawki</span>
           </Link>
           <nav className='flex gap-6 items-center'>
@@ -74,11 +73,11 @@ export default function Navbar() {
             <Link href='#services' prefetch={false}>
               Services
             </Link>
-            <Link href='#projects' prefetch={false}>
-              Projects
-            </Link>
             <Link href='#skills' prefetch={false}>
               Skills
+            </Link>
+            <Link href='#projects' prefetch={false}>
+              Projects
             </Link>
             <Link href='#contact' prefetch={false}>
               Contact

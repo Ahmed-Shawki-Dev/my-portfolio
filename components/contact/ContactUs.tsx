@@ -97,7 +97,7 @@ export default function ContactMe() {
                   <ValidationError prefix='Message' field='message' errors={state.errors} />
                 </div>
 
-                <Button type='submit' disabled={state.submitting} className='w-full'>
+                <Button variant={'secondary'} type='submit' disabled={state.submitting} className='w-full'>
                   {state.submitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
