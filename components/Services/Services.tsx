@@ -1,6 +1,7 @@
 import { ServicesData } from '../../data'
 import { IService } from '../../interface'
 import { trimText } from '../../utils'
+import SpotlightCard from '../SpotlightCard '
 import ServiceCard from './ServiceCard'
 
 const Services = () => {
@@ -29,7 +30,7 @@ const Services = () => {
                 icon={icon}
                 title={title}
                 description={trimText(description)}
-              />
+                />
             )
           })}
         </div>

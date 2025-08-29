@@ -27,7 +27,7 @@ const ProjectCard = ({ demoLink, description, image, repoLink, technology, title
         <p className='mb-3 font-normal text-gray-700 dark:text-gray-400 pb-3'>{description}</p>
         <div className='absolute bottom-4 space-x-2 '>
           {technology?.map((tech) => (
-            <Badge key={tech} variant={'default'}>{tech}</Badge>
+            <Badge key={tech} variant={'secondary'}>{tech}</Badge>
           ))}
         </div>
       </div>

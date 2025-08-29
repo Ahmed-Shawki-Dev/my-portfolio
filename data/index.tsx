@@ -35,27 +35,23 @@ export const projectsData: IProject[] = [
   },
 ]
 
-export const skillsData: string[] = [
-  // Core Stack
-  '/icons/react.svg',
-  '/icons/next.svg',
-  '/icons/typescript.svg',
-  '/icons/javascript.svg',
-  '/icons/tailwindcss.svg',
-  '/icons/redux-reducer.svg',
+export const skillsDataObj = [
+  { src: '/icons/react.svg', alt: 'React', href: '#' },
+  { src: '/icons/next.svg', alt: 'Next.js', href: '#' },
+  { src: '/icons/typescript.svg', alt: 'TypeScript', href: '#' },
+  { src: '/icons/javascript.svg', alt: 'JavaScript', href: '#' },
+  { src: '/icons/tailwindcss.svg', alt: 'Tailwind CSS', href: '#' },
+  { src: '/icons/redux-reducer.svg', alt: 'Redux', href: '#' },
 
-  // Complementary Tools
-  '/icons/prisma.svg',
-  '/icons/git.svg',
-  '/icons/vercel.svg',
+  { src: '/icons/prisma.svg', alt: 'Prisma', href: '#' },
+  { src: '/icons/git.svg', alt: 'Git', href: '#' },
+  { src: '/icons/vercel.svg', alt: 'Vercel', href: '#' },
 
-  // Styling & Legacy
-  '/icons/html.svg',
-  '/icons/css.svg',
-  '/icons/sass.svg',
+  { src: '/icons/html.svg', alt: 'HTML', href: '#' },
+  { src: '/icons/css.svg', alt: 'CSS', href: '#' },
+  { src: '/icons/sass.svg', alt: 'Sass', href: '#' },
 
-  // Tooling
-  '/icons/pnpm.svg',
+  { src: '/icons/pnpm.svg', alt: 'pnpm', href: '#' },
 ]
 
 export const contacts: IContact[] = [
@@ -76,13 +72,13 @@ export const contacts: IContact[] = [
   {
     id: 3,
     name: 'Phone',
-    icon: <Phone  className='w-5 h-5' />,
+    icon: <Phone className='w-5 h-5' />,
     link: 'tel:+201098786468',
     hoverText: 'Call me directly',
   },
 ]
 
-export const ServicesData:IService[] = [
+export const ServicesData: IService[] = [
   {
     id: 1,
     title: 'Web Development',

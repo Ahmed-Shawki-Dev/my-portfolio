@@ -1,22 +1,22 @@
 'use client'
 import { Eye, Paperclip } from 'lucide-react'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import HeroImage from '../hero/HeroImage'
 import ScrollDownButton from '../ScrollDown'
 import { Button } from '../ui/button'
-import dynamic from 'next/dynamic'
 
-const Typewriter = dynamic(
-  () => import('react-simple-typewriter').then((mod) => mod.Typewriter),
-  { ssr: false }, 
-)
+const Typewriter = dynamic(() => import('react-simple-typewriter').then((mod) => mod.Typewriter), {
+  ssr: false,
+})
 
 const Hero = () => {
   return (
     <div
-      className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15'
-      id='Home'
+    className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15 '
+    id='Home'
     >
+
       <div className='max-w-screen-xl w-full  mx-auto grid lg:grid-cols-2 gap-12  md:px-6  '>
         <div className='flex-1 flex flex-col justify-center items-center xl:items-start space-y-5'>
           <div className='space-y-1'>
@@ -43,7 +43,6 @@ const Hero = () => {
               <span>Building Modern Web Apps</span>
             </p>
           </div>
-
           <div className='flex flex-wrap gap-2'>
             <Link href={'mailto:ahmedshawki.dev@gmail.com'}>
               <Button>
