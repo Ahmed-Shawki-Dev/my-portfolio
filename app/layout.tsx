@@ -3,8 +3,8 @@ import { Cairo } from 'next/font/google'
 import Footer from '../components/footer/Footer'
 import Navbar from '../components/navbar/Navbar'
 import { ThemeProvider } from '../components/theme-provider'
-import './globals.css'
 import UpButton from '../components/UpButton'
+import './globals.css'
 
 const cairoSans = Cairo({
   subsets: ['latin', 'arabic'],
@@ -64,14 +64,14 @@ export default function RootLayout({
       <body className={`${cairoSans.className}`} suppressHydrationWarning>
         <ThemeProvider
           attribute='class'
-          defaultTheme='system'
-          enableSystem
+          defaultTheme='dark'
+          enableSystem={false}
           disableTransitionOnChange
         >
           <Navbar />
           {children}
           <Footer />
-          <UpButton/>
+          <UpButton />
         </ThemeProvider>
       </body>
     </html>

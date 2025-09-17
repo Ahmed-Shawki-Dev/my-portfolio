@@ -1,6 +1,9 @@
 import p1 from '@/assets/projects/p1.webp'
 import p2 from '@/assets/projects/p2.webp'
 import p3 from '@/assets/projects/p3.webp'
+import p4 from '@/assets/projects/p4.webp'
+import p5 from '@/assets/projects/p5.webp'
+import p6 from '@/assets/projects/p6.webp'
 import { Code2, Gauge, Github, Layout, Linkedin, Phone, Plug } from 'lucide-react'
 import { IContact, IProject, IService } from '../interface'
 
@@ -14,6 +17,7 @@ export const projectsData: IProject[] = [
     demoLink: 'https://vs-code-clone-omega.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/Project4-VS-Code-Clone',
     technology: ['React', 'Redux', 'Typescript'],
+    hasDemo: true,
   },
   {
     id: 2,
@@ -24,6 +28,7 @@ export const projectsData: IProject[] = [
     demoLink: 'https://simple-product-builder.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/project2-react',
     technology: ['React', 'Typescript'],
+    hasDemo: true,
   },
   {
     id: 3,
@@ -34,6 +39,40 @@ export const projectsData: IProject[] = [
     demoLink: 'https://ai-cv-analyzer-three.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/AI-CV-Analyzer',
     technology: ['Typescript', 'API Fetch', 'AI'],
+    hasDemo: true,
+  },
+  {
+    id: 4,
+    title: 'Headphone Landingpage',
+    description:
+      'A sleek and modern landing page for premium headphones, showcasing product features with a clean design and responsive layout.',
+    image: p4,
+    demoLink: 'https://headphones-website-six.vercel.app/',
+    repoLink: 'https://github.com/Ahmed-Shawki-Dev/headphones-website',
+    technology: ['Typescript', 'React', 'Landingpage'],
+    hasDemo: true,
+  },
+  {
+    id: 5,
+    title: 'E-Commerce-React',
+    description:
+      'Simple e-commerce website built with React to browse products and manage a shopping cart.',
+    image: p5,
+    demoLink: '/',
+    repoLink: 'https://github.com/Ahmed-Shawki-Dev/E-Commerce-React',
+    technology: ['Typescript', 'React', 'API Fetch', 'Fullstack'],
+    hasDemo: false,
+  },
+  {
+    id: 6,
+    title: 'Fullstack Todolist',
+    description:
+      'Fullstack todo app with authentication and database support for managing daily tasks.',
+    image: p6,
+    demoLink: '/',
+    repoLink: 'https://github.com/Ahmed-Shawki-Dev/full-stack-todoList-react',
+    technology: ['Typescript', 'React', 'API Fetch', 'Fullstack'],
+    hasDemo: false,
   },
 ]
 

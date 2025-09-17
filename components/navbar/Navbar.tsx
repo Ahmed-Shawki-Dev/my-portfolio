@@ -5,7 +5,6 @@ import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { ModeToggle } from '../mode-toggle'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -14,9 +13,7 @@ export default function Navbar() {
     <>
       <Sheet open={open} onOpenChange={setOpen}>
         <div className='flex flex-row-reverse justify-between items-center w-full absolute top-0 left-0 px-5 py-5'>
-          <div className='xl:hidden z-50'>
-            <ModeToggle />
-          </div>
+          <div className='xl:hidden z-50'></div>
           <SheetTrigger asChild className='fixed top-4 left-5 px-4 py-5 z-50 backdrop-blur-3xl'>
             <Button variant='ghost' size='icon' className='xl:hidden'>
               <MenuIcon className='h-8 w-8' />
@@ -82,7 +79,6 @@ export default function Navbar() {
             <Link href='#contact' prefetch={false}>
               Contact
             </Link>
-            <ModeToggle />
           </nav>
         </div>
       </header>

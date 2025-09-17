@@ -9,6 +9,7 @@ export interface IProject {
   demoLink: string
   repoLink: string
   technology: string[]
+  hasDemo: boolean
 }
 
 export interface IContact {
