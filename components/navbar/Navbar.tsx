@@ -38,11 +38,11 @@ export default function Navbar() {
               <Link href='#services' onClick={() => setOpen(false)}>
                 Services
               </Link>
-              <Link href='#skills' onClick={() => setOpen(false)}>
-                Skills
-              </Link>
               <Link href='#projects' onClick={() => setOpen(false)}>
                 Projects
+              </Link>
+              <Link href='#skills' onClick={() => setOpen(false)}>
+                Skills
               </Link>
               <Link href='#contact' onClick={() => setOpen(false)}>
                 Contact
@@ -70,11 +70,11 @@ export default function Navbar() {
             <Link href='#services' prefetch={false}>
               Services
             </Link>
-            <Link href='#skills' prefetch={false}>
-              Skills
-            </Link>
             <Link href='#projects' prefetch={false}>
               Projects
+            </Link>
+            <Link href='#skills' prefetch={false}>
+              Skills
             </Link>
             <Link href='#contact' prefetch={false}>
               Contact
