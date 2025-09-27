@@ -1,9 +1,12 @@
+import Footer from '@/components/footer/Footer'
+import Navbar from '@/components/navbar/Navbar'
+import { ThemeProvider } from '@/components/theme-provider'
+import UpButton from '@/components/UpButton'
 import type { Metadata } from 'next'
+import { NextIntlClientProvider } from 'next-intl'
+
 import { Cairo } from 'next/font/google'
-import Footer from '../components/footer/Footer'
-import Navbar from '../components/navbar/Navbar'
-import { ThemeProvider } from '../components/theme-provider'
-import UpButton from '../components/UpButton'
+import { cookies } from 'next/headers'
 import './globals.css'
 
 const cairoSans = Cairo({
@@ -54,24 +57,28 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const store = await cookies()
+  const locale = store.get('locale')?.value || 'en'
   return (
-    <html lang='en' suppressHydrationWarning>
-      <body className={`${cairoSans.className}`} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={`${cairoSans.className}`} dir={locale==='ar'?'rtl':'ltr'} suppressHydrationWarning>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
           enableSystem={false}
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
-          <Footer />
-          <UpButton />
+          <NextIntlClientProvider>
+            <Navbar />
+            {children}
+            <Footer />
+            <UpButton />
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -8,11 +8,13 @@ import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 import { Label } from '../ui/label'
 import { Textarea } from '../ui/textarea'
+import { useTranslations } from 'next-intl'
 
 export default function ContactMe() {
   const [state, handleSubmit] = useForm('xgvlvolo')
   const [showSuccess, setShowSuccess] = useState(false)
   const [formKey, setFormKey] = useState(0)
+  const t = useTranslations("contact")
 
   useEffect(() => {
     if (state.succeeded) {
@@ -25,9 +27,9 @@ export default function ContactMe() {
 
   return (
     <section className='min-h-fit flex items-start justify-center px-4 py-15' id='contact'>
-      <div className='max-w-screen-xl w-full mx-auto flex flex-col items-center gap-8'>
+      <div className='max-w-screen-xl w-full mx-auto flex flex-col items-center gap-8 rtl:space-y-5'>
         <h2 className='text-3xl md:text-5xl xl:text-6xl font-bold text-center xl:text-left'>
-          Get in touch
+          {t('title')}
         </h2>
 
         {showSuccess && (
@@ -39,13 +41,13 @@ export default function ContactMe() {
         <div className='space-y-5 w-full'>
           <Card>
             <CardHeader>
-              <h3 className='text-2xl font-bold'>Contact Details</h3>
+              <h3 className='text-2xl font-bold'> {t('contactTitle')}</h3>
             </CardHeader>
             <CardContent>
               <div className='space-y-4'>
                 <div className='flex items-center space-x-2'>
                   <MapPin className='w-6 h-6' />
-                  <span>Cairo, Egypt</span>
+                  <span>{t('address')}</span>
                 </div>
                 <div>
                   <Link href='tel:+201098786468' className='flex items-center space-x-2 flex-row'>
@@ -68,37 +70,54 @@ export default function ContactMe() {
 
           <Card>
             <CardHeader>
-              <h3 className='text-2xl font-bold'>Leave a Message</h3>
+              <h3 className='text-2xl font-bold'>{t('contactFormTitle')}</h3>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className='space-y-4' key={formKey}>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                   <div className='flex flex-col space-y-2'>
-                    <Label htmlFor='firstName'>First Name</Label>
+                    <Label htmlFor='firstName'>{t('firstNameLabel')}</Label>
                     <Input id='firstName' type='text' name='firstName' required />
-                    <ValidationError prefix='First Name' field='firstName' errors={state.errors} />
+                    <ValidationError
+                      prefix={t('firstNameLabel')}
+                      field='firstName'
+                      errors={state.errors}
+                    />
                   </div>
                   <div className='flex flex-col space-y-2'>
-                    <Label htmlFor='lastName'>Last Name</Label>
+                    <Label htmlFor='lastName'>{t('lastNameLabel')}</Label>
                     <Input id='lastName' type='text' name='lastName' required />
-                    <ValidationError prefix='Last Name' field='lastName' errors={state.errors} />
+                    <ValidationError
+                      prefix={t('lastNameLabel')}
+                      field='lastName'
+                      errors={state.errors}
+                    />
                   </div>
                 </div>
 
                 <div className='flex flex-col space-y-2'>
-                  <Label htmlFor='email'>Email Address</Label>
+                  <Label htmlFor='email'>{t('emailLabel')}</Label>
                   <Input id='email' type='email' name='email' required />
-                  <ValidationError prefix='Email' field='email' errors={state.errors} />
+                  <ValidationError prefix={t('emailLabel')} field='email' errors={state.errors} />
                 </div>
 
                 <div className='flex flex-col space-y-2'>
-                  <Label htmlFor='message'>Message</Label>
+                  <Label htmlFor='message'>{t('messageLabel')}</Label>
                   <Textarea id='message' name='message' rows={5} required />
-                  <ValidationError prefix='Message' field='message' errors={state.errors} />
+                  <ValidationError
+                    prefix={t('messageLabel')}
+                    field='message'
+                    errors={state.errors}
+                  />
                 </div>
 
-                <Button variant={'secondary'} type='submit' disabled={state.submitting} className='w-full'>
-                  {state.submitting ? 'Sending...' : 'Send Message'}
+                <Button
+                  variant={'secondary'}
+                  type='submit'
+                  disabled={state.submitting}
+                  className='w-full'
+                >
+                  {state.submitting ? t('sending') : t('sendMessage')}
                 </Button>
               </form>
             </CardContent>

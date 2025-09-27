@@ -5,6 +5,7 @@ import { IProject } from '../../interface'
 import { trimText } from '../../utils'
 import { Button } from '../ui/button'
 import ProjectCard from './ProjectCard'
+import { useTranslations } from 'next-intl'
 
 const Projects = () => {
   const [visibleCount, setVisibleCount] = useState(3)
@@ -12,12 +13,13 @@ const Projects = () => {
   const handleShowMore = () => {
     setVisibleCount((prev) => prev + 3)
   }
+  const t = useTranslations('Projects')
 
   return (
     <section className='min-h-fit flex items-start justify-center px-4 py-15' id='projects'>
-      <div className='max-w-screen-xl w-full mx-auto flex flex-col items-center gap-8 '>
+      <div className='max-w-screen-xl w-full mx-auto flex flex-col items-center gap-8  rtl:space-y-5'>
         <h2 className='text-3xl md:text-5xl xl:text-6xl font-bold text-center xl:text-left'>
-          Projects
+          {t('title')}
         </h2>
 
         <div className='grid [grid-template-columns:repeat(auto-fit,minmax(300px,max-content))] md:[grid-template-columns:repeat(auto-fit,minmax(400px,max-content))] justify-center gap-4 w-full'>
@@ -31,8 +33,8 @@ const Projects = () => {
                 demoLink={demoLink}
                 repoLink={repoLink}
                 image={image}
-                title={title}
-                description={trimText(description)}
+                title={t(project.title)}
+                description={trimText(t(project.description))}
                 technology={technology}
                 hasDemo={hasDemo}
               />

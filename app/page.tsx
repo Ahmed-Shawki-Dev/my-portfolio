@@ -1,10 +1,10 @@
-import AboutMe from '../components/about/AboutMe'
-import ContactMe from '../components/contact/ContactUs'
-import Hero from '../components/hero/Hero'
-import Projects from '../components/projects/Projects'
-import Section from '../components/Section/Section'
-import Services from '../components/Services/Services'
-import Skills from '../components/skills/Skills'
+import AboutMe from '@/components/about/AboutMe'
+import ContactMe from '@/components/contact/ContactUs'
+import Hero from '@/components/hero/Hero'
+import Projects from '@/components/projects/Projects'
+import Section from '@/components/Section/Section'
+import Services from '@/components/Services/Services'
+import Skills from '@/components/skills/Skills'
 
 const Page = () => {
   return (

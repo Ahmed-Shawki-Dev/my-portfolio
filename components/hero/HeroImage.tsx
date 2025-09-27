@@ -10,7 +10,7 @@ const HeroImage = () => {
         width={450}
         height={450}
         priority
-        className='rounded-md'
+        className='rounded-md select-none'
       />
     </div>
   )

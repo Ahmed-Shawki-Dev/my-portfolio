@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "title": "HELLO, I'M ",
+    "role1": "Frontend Developer",
+    "role2": "React & Next.js",
+    "desc": "Building Modern Web Apps",
+    "hire": "Hire Me",
+    "cv": "View CV",
+    "WEB DEV": "WEB DEV",
+    "AHMED": "AHMED"
+  },
+  "AboutPage": {
+    "aboutText": "I'm a Frontend Developer specializing in React & TypeScript, building high-quality, API-driven web applications with Next.js, Tailwind CSS, and Redux. I bridge the user interface to core functionality, delivering functional and performant solutions. Passionate about technology and continuous learning, I turn ideas into polished products while tackling new challenges.",
+    "aboutTitle": "About Me"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "Services": {
+    "title": "Services",
+    "WebDevelopment": "Web Development",
+    "WebDevelopmentDesc": "Building responsive, scalable, and maintainable web applications.",
+    "UIUXImplementation": "UI/UX Implementation",
+    "UIUXImplementationDesc": "Transforming designs into pixel-perfect, accessible, and interactive interfaces.",
+    "APIIntegration": "API Integration",
+    "APIIntegrationDesc": "Connecting frontends with REST & GraphQL APIs to deliver dynamic experiences.",
+    "PerformanceOptimization": "Performance Optimization",
+    "PerformanceOptimizationDesc": "Optimizing apps for speed, SEO, and best user experience across devices."
+  },
+  
+  "Projects": {
+    "title": "Projects",
+    "VSCodeClone": "VS Code Clone",
+    "VSCodeCloneDesc": "A Visual Studio Code clone (preview only) built with React, TypeScript, and Redux Toolkit. Simulates file explorer, tab management, and layout with recursion, Redux state management, and data persistence.",
+    "ProductBuilder": "Product Builder",
+    "ProductBuilderDesc": "Quick, lightweight tool for building and customizing products, with live previews, responsive layout, and intuitive configuration options.",
+    "AICVAnalyzer": "AI CV Analyzer",
+    "AICVAnalyzerDesc": "AI-powered CV evaluation platform that analyzes resumes and provides instant insights, highlighting strengths and improvement areas.",
+    "HeadphoneLandingpage": "Headphone Landingpage",
+    "HeadphoneLandingpageDesc": "Modern landing page for premium headphones, showcasing features with a clean, responsive design.",
+    "ECommerceReact": "E-Commerce React",
+    "ECommerceReactDesc": "Simple e-commerce website built with React to browse products and manage a shopping cart.",
+    "FullstackTodolist": "Fullstack Todolist",
+    "FullstackTodolistDesc": "Fullstack todo app with authentication and database support for managing daily tasks."
+  },
+  "skills":{
+    "title":"Skills"
+  },
+  "contact":{
+    "title": "Get in touch",
+    "contactTitle": "Contact Details",
+    "address": "Cairo, Egypt",
+    "contactFormTitle": "Leave a Message",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "emailLabel": "Email Address",
+    "messageLabel": "Message",
+    "sending": "Sending...",
+    "sendMessage": "Send Message"
+  },
+  "footer":{
+    "footer":"Made With ❤️, By Ahmed Shawki"
+  }
+}
+
+

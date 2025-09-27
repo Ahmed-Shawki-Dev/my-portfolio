@@ -1,0 +1,68 @@
+{
+  "HomePage": {
+    "title": "أهلا، أنا ",
+    "role1": "مطور واجهات أمامية",
+    "role2": "React و Next.js",
+    "desc": "أصمم وأبني تطبيقات ويب متطورة",
+    "hire": "وظفني",
+    "cv": "سيرتي الذاتية",
+    "WEB DEV": "مطور ويب",
+    "AHMED": "أحمد"
+  },
+  "AboutPage": {
+    "aboutText": "أنا مطور واجهات أمامية متخصص في React وTypeScript، أبني تطبيقات ويب عالية الجودة تعتمد على الـ API باستخدام Next.js وTailwind CSS وRedux. أصل بين واجهة المستخدم والوظائف الأساسية لأقدم حلول عملية وسريعة. شغوف بالتقنية والتعلم المستمر، أحول الأفكار إلى منتجات متقنة وأواجه التحديات الجديدة بثبات.",
+    "aboutTitle": "من أنا"
+  },
+  "Navbar": {
+    "home": "الرئيسية",
+    "about": "من أنا",
+    "services": "الخدمات",
+    "projects": "المشاريع",
+    "skills": "المهارات",
+    "contact": "تواصل"
+  },
+  "Services": {
+    "title": "خدماتي",
+    "WebDevelopment": "تطوير الويب",
+    "WebDevelopmentDesc": "بناء تطبيقات ويب سريعة الاستجابة، قابلة للتوسع، وسهلة الصيانة.",
+    "UIUXImplementation": "تنفيذ واجهات المستخدم وتجربة المستخدم",
+    "UIUXImplementationDesc": "تحويل التصاميم إلى واجهات دقيقة، سهلة الوصول، وتفاعلية.",
+    "APIIntegration": "تكامل واجهات البرمجة",
+    "APIIntegrationDesc": "ربط الواجهات الأمامية مع REST و GraphQL APIs لتقديم تجارب ديناميكية.",
+    "PerformanceOptimization": "تحسين الأداء",
+    "PerformanceOptimizationDesc": "تحسين التطبيقات من حيث السرعة، تحسين محركات البحث، وأفضل تجربة مستخدم عبر الأجهزة."
+  },
+  "Projects": {
+    "title": "مشاريعي",
+    "VSCodeClone": "نسخة من VS Code",
+    "VSCodeCloneDesc": "مشروع تقليد لبرنامج Visual Studio Code (عرض فقط) مبني بـ React و TypeScript و Redux Toolkit. يحاكي مستكشف الملفات، إدارة التابات، والتصميم باستخدام العودية وإدارة الحالة مع Redux وحفظ البيانات.",
+    "ProductBuilder": "أداة بناء المنتجات",
+    "ProductBuilderDesc": "أداة سريعة وخفيفة لبناء وتخصيص المنتجات مع معاينات مباشرة وتصميم متجاوب وخيارات إعداد سهلة.",
+    "AICVAnalyzer": "محلل السيرة الذاتية بالـ AI",
+    "AICVAnalyzerDesc": "منصة تقييم للسير الذاتية مدعومة بالذكاء الاصطناعي تقدم تحليلات فورية، وتساعد على معرفة نقاط القوة ومجالات التحسين.",
+    "HeadphoneLandingpage": "صفحة هبوط للسماعات",
+    "HeadphoneLandingpageDesc": "صفحة هبوط عصرية لسماعات مميزة تعرض المزايا بتصميم نظيف ومتجاوب.",
+    "ECommerceReact": "متجر إلكتروني بـ React",
+    "ECommerceReactDesc": "موقع تجارة إلكترونية بسيط مبني بـ React لتصفح المنتجات وإدارة عربة التسوق.",
+    "FullstackTodolist": "تطبيق قائمة المهام الكامل",
+    "FullstackTodolistDesc": "تطبيق مهام يومية مع تسجيل دخول ودعم قاعدة بيانات لإدارة المهام بكفاءة."
+  },
+  "skills": {
+    "title": "مهاراتي"
+  },
+  "contact": {
+    "title": "تواصل معي",
+    "contactTitle": "بيانات الإتصال",
+    "address": "القاهرة، مصر",
+    "contactFormTitle": "اترك رسالة",
+    "firstNameLabel": "الاسم الأول",
+    "lastNameLabel": "اسم العائلة",
+    "emailLabel": "البريد الإلكتروني",
+    "messageLabel": "الرسالة",
+    "sending": "جاري الإرسال...",
+    "sendMessage": "إرسال الرسالة"
+  },
+  "footer": {
+    "footer": "صُنع بحب ❤️، بواسطة أحمد شوقي"
+  }
+}

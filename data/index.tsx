@@ -10,9 +10,8 @@ import { IContact, IProject, IService } from '../interface'
 export const projectsData: IProject[] = [
   {
     id: 1,
-    title: 'VS Code Clone',
-    description:
-      'This project is a Visual Studio Code clone (preview only, not a real code editor) built with React, TypeScript, and Redux Toolkit. It simulates the VS Code file explorer, tab management, and basic layout — with a focus on recursion for file tree rendering, state management with Redux, and persisting data for a realistic experience.',
+    title: 'VSCodeClone',
+    description: 'VSCodeCloneDesc',
     image: p1,
     demoLink: 'https://vs-code-clone-omega.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/Project4-VS-Code-Clone',
@@ -21,9 +20,8 @@ export const projectsData: IProject[] = [
   },
   {
     id: 2,
-    title: 'Product Builder',
-    description:
-      'Quick, lightweight tool for building and customizing products, with live previews, responsive layout, and intuitive configuration options.',
+    title: 'ProductBuilder',
+    description: 'ProductBuilderDesc',
     image: p2,
     demoLink: 'https://simple-product-builder.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/project2-react',
@@ -32,9 +30,8 @@ export const projectsData: IProject[] = [
   },
   {
     id: 3,
-    title: 'AI CV Analyzer',
-    description:
-      'AI-powered CV evaluation platform that analyzes uploaded resumes and provides instant insights, helping users understand their strengths and areas to improve.',
+    title: 'AICVAnalyzer',
+    description: 'AICVAnalyzerDesc',
     image: p3,
     demoLink: 'https://ai-cv-analyzer-three.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/AI-CV-Analyzer',
@@ -43,9 +40,8 @@ export const projectsData: IProject[] = [
   },
   {
     id: 4,
-    title: 'Headphone Landingpage',
-    description:
-      'A sleek and modern landing page for premium headphones, showcasing product features with a clean design and responsive layout.',
+    title: 'HeadphoneLandingpage',
+    description: 'HeadphoneLandingpageDesc',
     image: p4,
     demoLink: 'https://headphones-website-six.vercel.app/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/headphones-website',
@@ -54,9 +50,8 @@ export const projectsData: IProject[] = [
   },
   {
     id: 5,
-    title: 'E-Commerce-React',
-    description:
-      'Simple e-commerce website built with React to browse products and manage a shopping cart.',
+    title: 'ECommerceReact',
+    description: 'ECommerceReactDesc',
     image: p5,
     demoLink: '/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/E-Commerce-React',
@@ -65,9 +60,8 @@ export const projectsData: IProject[] = [
   },
   {
     id: 6,
-    title: 'Fullstack Todolist',
-    description:
-      'Fullstack todo app with authentication and database support for managing daily tasks.',
+    title: 'FullstackTodolist',
+    description: 'FullstackTodolistDesc',
     image: p6,
     demoLink: '/',
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/full-stack-todoList-react',
@@ -123,26 +117,26 @@ export const contacts: IContact[] = [
 export const ServicesData: IService[] = [
   {
     id: 1,
-    title: 'Web Development',
-    description: 'Building responsive, scalable, and maintainable web applications.',
+    title: 'WebDevelopment',
+    description: 'WebDevelopmentDesc',
     icon: Code2,
   },
   {
     id: 2,
-    title: 'UI/UX Implementation',
-    description: 'Transforming designs into pixel-perfect, accessible, and interactive interfaces.',
+    title: 'UIUXImplementation',
+    description: 'UIUXImplementationDesc',
     icon: Layout,
   },
   {
     id: 3,
-    title: 'API Integration',
-    description: 'Connecting frontends with REST & GraphQL APIs to deliver dynamic experiences.',
+    title: 'APIIntegration',
+    description: 'APIIntegrationDesc',
     icon: Plug,
   },
   {
     id: 4,
-    title: 'Performance Optimization',
-    description: 'Optimizing apps for speed, SEO, and best user experience across devices.',
+    title: 'PerformanceOptimization',
+    description: 'PerformanceOptimizationDesc',
     icon: Gauge,
   },
 ]
