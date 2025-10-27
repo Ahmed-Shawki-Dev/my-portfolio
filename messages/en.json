@@ -46,7 +46,9 @@
     "ECommerceReact": "E-Commerce React",
     "ECommerceReactDesc": "Simple e-commerce website built with React to browse products and manage a shopping cart.",
     "FullstackTodolist": "Fullstack Todolist",
-    "FullstackTodolistDesc": "Fullstack todo app with authentication and database support for managing daily tasks."
+    "FullstackTodolistDesc": "Fullstack todo app with authentication and database support for managing daily tasks.",
+    "FullstackEcommerce": "Fullstack Ecommerce",
+    "FullstackEcommerceDesc": "A modern, full-stack e-commerce application featuring a fast, interactive UI built with Next.js, and efficient database management using Prisma with MongoDB."
   },
   "skills":{
     "title":"Skills"

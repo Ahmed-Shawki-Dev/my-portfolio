@@ -92,7 +92,7 @@ body {
 .dark {
   --background: #09090b;
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
+  --card: #101013;
   --card-foreground: oklch(0.985 0 0);
   --pattern-color: oklch(100% 0.00011 271.152 / 0.15);
   --popover: oklch(0.21 0.006 285.885);
@@ -145,4 +145,13 @@ body {
 ::-webkit-scrollbar-track {
   background: var(--muted);
   border-radius: 6px;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-foreground);
+}
+
+h2 {
+  text-transform: uppercase;
 }

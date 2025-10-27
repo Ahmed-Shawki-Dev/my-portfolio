@@ -26,10 +26,10 @@ const ChangeLanguageButton = () => {
 
   return (
     <Select value={language} onValueChange={onChangeLanguage}>
-      <SelectTrigger className='w-[80px]'>
+      <SelectTrigger className='w-20'>
         <SelectValue />
       </SelectTrigger>
-      <SelectContent className='z-[999]'>
+      <SelectContent className='z-999'>
         <SelectItem value='en'>EN</SelectItem>
         <SelectItem value='ar'>AR</SelectItem>
       </SelectContent>

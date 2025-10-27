@@ -25,7 +25,7 @@ const Hero = () => {
       className='hero relative min-h-[92vh] md:min-h-screen flex items-center justify-center py-15'
       id='Home'
     >
-      <div className='max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 gap-12 md:px-6'>
+      <div className='max-w-7xl w-full mx-auto grid lg:grid-cols-2 gap-12 md:px-6'>
         <div className='flex-1 flex flex-col justify-center items-center xl:items-start space-y-5 '>
           <div className='space-y-1 rtl:space-y-3'>
             <h1 className='text-[2rem] md:text-5xl xl:text-[3.5rem] 2xl:text-6xl font-bold text-center xl:text-left xl:rtl:text-right'>

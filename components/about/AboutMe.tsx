@@ -3,11 +3,11 @@ import { contacts } from '../../data'
 import { AboutMeHover } from './AboutUsHover'
 
 export default function AboutMe() {
-    const t = useTranslations('AboutPage')
-  
+  const t = useTranslations('AboutPage')
+
   return (
     <section className='min-h-fit flex items-start justify-center  px-4 py-15 ' id='about'>
-      <div className='max-w-screen-xl w-full mx-auto flex flex-col items-center gap-5 rtl:space-y-3'>
+      <div className='max-w-7xl w-full mx-auto flex flex-col items-center gap-5 rtl:space-y-3'>
         <h2 className='text-3xl md:text-5xl xl:text-6xl font-bold text-left xl:text-left'>
           {t('aboutTitle')}
         </h2>

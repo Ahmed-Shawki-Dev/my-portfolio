@@ -4,6 +4,7 @@ import p3 from '@/assets/projects/p3.webp'
 import p4 from '@/assets/projects/p4.webp'
 import p5 from '@/assets/projects/p5.webp'
 import p6 from '@/assets/projects/p6.webp'
+import p7 from '@/assets/projects/p7.webp'
 import { Code2, Gauge, Github, Layout, Linkedin, Phone, Plug } from 'lucide-react'
 import { IContact, IProject, IService } from '../interface'
 
@@ -20,12 +21,12 @@ export const projectsData: IProject[] = [
   },
   {
     id: 2,
-    title: 'ProductBuilder',
-    description: 'ProductBuilderDesc',
+    title: 'FullstackEcommerce',
+    description: 'FullstackEcommerceDesc',
     image: p2,
-    demoLink: 'https://simple-product-builder.vercel.app/',
-    repoLink: 'https://github.com/Ahmed-Shawki-Dev/project2-react',
-    technology: ['React', 'Typescript'],
+    demoLink: 'https://haztech-computer.vercel.app/',
+    repoLink: 'https://github.com/Ahmed-Shawki-Dev/fullstack-ecommerce-nextjs-prisma-monogdb',
+    technology: ['Typescript', 'Next.js', 'Fullstack'],
     hasDemo: true,
   },
   {
@@ -67,6 +68,16 @@ export const projectsData: IProject[] = [
     repoLink: 'https://github.com/Ahmed-Shawki-Dev/full-stack-todoList-react',
     technology: ['Typescript', 'React', 'API Fetch', 'Fullstack'],
     hasDemo: false,
+  },
+  {
+    id: 7,
+    title: 'ProductBuilder',
+    description: 'ProductBuilderDesc',
+    image: p7,
+    demoLink: 'https://simple-product-builder.vercel.app/',
+    repoLink: 'https://github.com/Ahmed-Shawki-Dev/project2-react',
+    technology: ['React', 'Typescript'],
+    hasDemo: true,
   },
 ]
 

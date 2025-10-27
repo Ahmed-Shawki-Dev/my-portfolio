@@ -7,15 +7,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import ChangeLanguageButton from '../ChangeLanguageButton'
+import { ModeToggle } from '../mode-toggle'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const t = useTranslations('Navbar')
-const locale = useLocale() 
+  const locale = useLocale()
   return (
     <>
       <Sheet open={open} onOpenChange={setOpen}>
-        <div className='flex flex-row items-center justify-between w-full fixed top-0 left-0 px-5 py-5 z-50 xl:hidden backdrop-blur-3xl'>
+        <div className='flex flex-row items-center justify-between w-full absolute top-0 left-0 px-5 py-5 z-50 xl:hidden backdrop-blur-xs'>
           <SheetTrigger asChild>
             <Button variant='ghost' size='icon'>
               <MenuIcon className='h-8 w-8' />
@@ -23,6 +24,7 @@ const locale = useLocale()
             </Button>
           </SheetTrigger>
 
+          <ModeToggle />
           <ChangeLanguageButton />
         </div>
 
@@ -58,12 +60,13 @@ const locale = useLocale()
       </Sheet>
 
       <header
-        className={`fixed left-0 top-0   w-full h-15 hidden xl:flex items-center  transition-colors duration-300 z-50 backdrop-blur-xs `}
+        className={`absolute left-0 top-0   w-full h-15 hidden xl:flex items-center  transition-colors duration-300 z-50 backdrop-blur-xs `}
       >
         <div className=' w-[80%] flex items-center justify-between m-auto px-6'>
-          <Link href='/' className='flex items-center gap-1' prefetch={false}>
+          <Link href='/' className='flex items-center gap-5' prefetch={false}>
             <Image alt='logo' src={'/logo.webp'} width={60} height={60} />
             <span className='sr-only'>Ahmed Shawki</span>
+            <ModeToggle />
           </Link>
           <nav className='flex gap-6 items-center'>
             <Link href='#home' prefetch={false}>
