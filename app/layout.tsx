@@ -1,17 +1,17 @@
-import Footer from '@/components/footer/Footer'
-import Navbar from '@/components/navbar/Navbar'
-import { ThemeProvider } from '@/components/theme-provider'
-import UpButton from '@/components/UpButton'
-import type { Metadata } from 'next'
-import { NextIntlClientProvider } from 'next-intl'
+import Footer from '@/components/footer/Footer';
+import Navbar from '@/components/navbar/Navbar';
+import { ThemeProvider } from '@/components/theme-provider';
+import UpButton from '@/components/UpButton';
+import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 
-import { Cairo } from 'next/font/google'
-import { cookies } from 'next/headers'
-import './globals.css'
+import { Changa } from 'next/font/google';
+import { cookies } from 'next/headers';
+import './globals.css';
 
-const cairoSans = Cairo({
+const changaSans = Changa({
   subsets: ['latin', 'arabic'],
-})
+});
 
 export const metadata: Metadata = {
   title: 'Ahmed Shawki - Web Dev',
@@ -28,7 +28,9 @@ export const metadata: Metadata = {
     'Web Design',
     'Fullstack',
   ],
-  authors: [{ name: 'Ahmed Shawki', url: 'https://ahmedshawkidev.vercel.app/' }],
+  authors: [
+    { name: 'Ahmed Shawki', url: 'https://ahmedshawkidev.vercel.app/' },
+  ],
   creator: 'Ahmed Shawki',
   publisher: 'Ahmed Shawki',
   openGraph: {
@@ -55,21 +57,25 @@ export const metadata: Metadata = {
     creator: '@AhmedShawkiDev',
     images: ['/og-image.webp'],
   },
-}
+};
 
 export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-  const store = await cookies()
-  const locale = store.get('locale')?.value || 'en'
+  const store = await cookies();
+  const locale = store.get('locale')?.value || 'en';
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${cairoSans.className}`} dir={locale==='ar'?'rtl':'ltr'} suppressHydrationWarning>
+      <body
+        className={`${changaSans.className}`}
+        dir={locale === 'ar' ? 'rtl' : 'ltr'}
+        suppressHydrationWarning
+      >
         <ThemeProvider
-          attribute='class'
-          defaultTheme='dark'
+          attribute="class"
+          defaultTheme="dark"
           enableSystem={false}
           disableTransitionOnChange
         >
@@ -82,5 +88,5 @@ export default async function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
